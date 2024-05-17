@@ -2,8 +2,6 @@
 
 def call() {
     stage('Run Docker container') {
-        steps {
             sh "docker run --name new_App_groovy -d -p 8082:8080 prerana004/my-app:2.0.0"
-        }
     }
 }
